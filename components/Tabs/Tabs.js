@@ -16,7 +16,7 @@ class TabLink {
     // Add a click event listener on this instance, calling the select method on click
     this.element.addEventListener('click', () => {
       this.select();
-})
+    })
   };
 
   select() {
@@ -46,7 +46,7 @@ class TabItem {
   select() {
     // Select all ".tabs-item" elements from the DOM
     // const items;
-    const items = docmuent.querySelectorAll('.tabs-item');
+    const items = document.querySelectorAll('.tabs-item');
     // Remove the class "tabs-item-selected" from each element
     items.forEach((item) => {
       item.classList.remove('tabs-item-selected');
